@@ -1,0 +1,16 @@
+title: "ApexAgent Performance Study"
+subtitle: "Where does the time go in a local-first voice agent?"
+author: "Nik Abdul Aqmal"
+date: today
+format:
+  html:
+    theme: darkly
+    toc: true
+    code-fold: true
+jupyter: jupyter_env
+execute:
+  echo: true
+
+Research Question
+
+What is the per-stage latency of the ApexAgent voice pipeline (STT → LLM → tool execution → TTS), and how does online mode (GLM API, Deepgram) compare to offline mode (Ollama + Qwen3, Apple Speech)?
